@@ -143,7 +143,9 @@ main {
             flex-wrap: nowrap;
             flex-direction: row;
             gap: $font-btn-std;
-
+         @media screen and (min-width:1921px){
+            margin-top:50px;
+         }
             @media (min-width: 1640px) and (orientation: landscape) {
                 gap: $font-btn-hd;
             }

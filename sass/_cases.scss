@@ -181,7 +181,7 @@ $transition: 0.25s;
                 width: 60%;
                 padding: 0 5%;
                 font-size: $font-pmin-std;
-                font-weight: fonts.$font-weight-semibold;
+                font-weight: fonts.$font-weight-regular;
                 @media (min-width: 1640px) and (orientation: landscape){
                     font-size: $font-pmin-hd;
                 }

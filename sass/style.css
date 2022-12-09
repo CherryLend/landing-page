@@ -733,7 +733,6 @@ body.dark .clients h2 {
   }
   .gcards .card .dynamic-icon {
     height: 100px;
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) and (orientation: landscape) {
@@ -753,7 +752,6 @@ body.dark .clients h2 {
   }
   .gcards .card .dynamic-icon {
     height: 100px;
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) and (orientation: portrait) {
@@ -778,6 +776,7 @@ body.dark .clients h2 {
   font-size: 1.25rem;
   font-weight: 700;
   text-align: center;
+  max-width: 250px;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .gcards .card h3 {
@@ -799,9 +798,14 @@ body.dark .card {
   background: #02080E;
 }
 body.dark .card h3 {
-  margin-top: auto;
+  margin-top: 50px;
   margin-bottom: 20px;
   color: #ffffff;
+}
+@media screen and (max-width: 1640px) {
+  body.dark .card h3 {
+    margin-top: 25px;
+  }
 }
 body.dark .card p {
   color: #787D80;
@@ -976,7 +980,7 @@ body.dark .card p {
   width: 60%;
   padding: 0 5%;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupCases .gCases .cCases p {
@@ -1606,10 +1610,13 @@ body {
   width: 100%;
 }
 
+html {
+  background-color: rgb(37, 37, 37);
+}
+
 body.dark {
   /* Rectangle 2207 */
   background: linear-gradient(209.75deg, rgba(0, 105, 55, 0.2) -2.17%, rgba(0, 0, 0, 0) 19.68%, rgba(0, 0, 0, 0) 19.68%), linear-gradient(180deg, rgba(46, 53, 71, 0) 6.39%, rgba(0, 0, 0, 0.3102) 10.29%, rgba(1, 1, 1, 0.5412) 13.69%, rgba(0, 0, 0, 0.66) 16.12%), linear-gradient(43.55deg, #344674 50.84%, rgba(0, 0, 0, 0) 105.99%);
-  background-size: 100%;
 }
 
 .darkMode {

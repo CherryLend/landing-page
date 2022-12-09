@@ -357,6 +357,7 @@ body.dark .articleLeft h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
+  font-weight: 700;
 }
 body.dark .articleLeft h1 {
   background: linear-gradient(180deg, #FFFFFF 0%, #C2CAD1 100%);
@@ -395,6 +396,7 @@ body.dark .buttons .button {
   padding-bottom: 0.875rem;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
+  font-weight: 700;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .title h2 {
@@ -416,7 +418,8 @@ body.dark .buttons .button {
 }
 .title p {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
+  max-width: 530px;
   color: #DEDEDE;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -446,6 +449,7 @@ body.dark .buttons .button {
   padding-bottom: 0.875rem;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
+  font-weight: 700;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .titleCases h2 {
@@ -472,7 +476,8 @@ body.dark .buttons .button {
 }
 .titleCases p {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
+  max-width: 530px;
   color: #DEDEDE;
   align-self: flex-start;
   margin-bottom: 2.25rem;
@@ -506,7 +511,6 @@ body.dark .buttons .button {
 }
 
 .assets .title {
-  align-items: flex-start;
   margin: 0 10vw;
   margin-bottom: 2.25rem;
 }
@@ -530,6 +534,7 @@ body.dark .buttons .button {
   padding-bottom: 0.875rem;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
+  font-weight: 700;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .assets .title h2 {
@@ -551,9 +556,11 @@ body.dark .buttons .button {
 }
 .assets .title p {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
+  max-width: 530px;
   color: #DEDEDE;
-  text-align: start;
+  text-align: center;
+  max-width: unset;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .assets .title p {
@@ -572,12 +579,6 @@ body.dark .buttons .button {
     padding-bottom: 0.5625rem;
   }
 }
-@media (max-width: 600px) and (orientation: portrait) {
-  .assets .title p {
-    text-align: center;
-  }
-}
-
 .social h2 {
   /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
   -webkit-background-clip: text;
@@ -587,6 +588,7 @@ body.dark .buttons .button {
   padding-bottom: 0.875rem;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
+  font-weight: 700;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .social h2 {
@@ -608,7 +610,8 @@ body.dark .buttons .button {
 }
 .social p {
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
+  max-width: 530px;
   color: #DEDEDE;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -629,7 +632,10 @@ body.dark .buttons .button {
   }
 }
 
-body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .clients h2 {
+body.dark .title h2,
+body.dark .titleCases h2,
+body.dark .social h2,
+body.dark .clients h2 {
   background: linear-gradient(90deg, #FF76A8 0%, #4B2EFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1055,6 +1061,7 @@ body.dark .card p {
   height: 188.5px;
   box-shadow: 0px 0px 48.75px rgba(0, 0, 0, 0.25);
   transition: 0.25s;
+  padding: 40px;
   /* background: $secundary-color; */
 }
 .groupAssets .cardAsset:hover {
@@ -1102,7 +1109,8 @@ body.dark .card p {
   }
 }
 .groupAssets .cardAsset img {
-  width: 95%;
+  width: 100%;
+  max-width: 250px;
 }
 
 body.dark .cardAsset {
@@ -1567,16 +1575,31 @@ body.dark footer li:hover {
   color: #EAA6AB;
 }
 
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/avenirnext/AvenirNextLTPro-Regular.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/avenirnext/AvenirNextLTPro-It.otf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/avenirnext/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: avenir;
 }
 
 :root {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: avenir;
 }
 
 body {
@@ -1586,6 +1609,7 @@ body {
 body.dark {
   /* Rectangle 2207 */
   background: linear-gradient(209.75deg, rgba(0, 105, 55, 0.2) -2.17%, rgba(0, 0, 0, 0) 19.68%, rgba(0, 0, 0, 0) 19.68%), linear-gradient(180deg, rgba(46, 53, 71, 0) 6.39%, rgba(0, 0, 0, 0.3102) 10.29%, rgba(1, 1, 1, 0.5412) 13.69%, rgba(0, 0, 0, 0.66) 16.12%), linear-gradient(43.55deg, #344674 50.84%, rgba(0, 0, 0, 0) 105.99%);
+  background-size: 100%;
 }
 
 .darkMode {
@@ -1621,12 +1645,8 @@ body.dark .darkMode {
     background-position: 0% 50%;
   }
 }
-.italic-text {
-  font-style: italic;
-}
-
-.semibold-text {
-  font-weight: 600;
+p {
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=style.css.map */

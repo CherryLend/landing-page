@@ -1,10 +1,10 @@
 @use "./fontweight" as fonts;
-
+$color-light: #787D80;
+$color-lighter:#DEDEDE;
 @mixin titleh {
     /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    font-weight: fonts.$font-weight-extrabold;
     background-size:400% 400%;
     font-size: $font-h2-std;
     padding-bottom: $font-h2-std*.5;
@@ -28,7 +28,7 @@
 @mixin titlep {
     font-size: $font-p-std;
     font-weight: fonts.$font-weight-bold;
-    color: $color-light;
+    color: $color-lighter;
     @media (min-width: 1640px) and (orientation: landscape){
         font-size: $font-p-hd;
     }
@@ -50,7 +50,6 @@ $font-p-std: 1.125rem;
 $font-p-hd: 1.5rem;
 
 
-$color-light: #787D80;
 
 .title{
     margin: 0 10vw;

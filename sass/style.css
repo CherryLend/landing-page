@@ -187,7 +187,6 @@ main .articleLeft h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size:400% 400%;*/
-  font-weight: 800;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
   font-size: 3.5rem;
@@ -391,7 +390,6 @@ body.dark .buttons .button {
   /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
-  font-weight: 800;
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
@@ -419,7 +417,7 @@ body.dark .buttons .button {
 .title p {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #787D80;
+  color: #DEDEDE;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .title p {
@@ -443,7 +441,6 @@ body.dark .buttons .button {
   /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
-  font-weight: 800;
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
@@ -476,7 +473,7 @@ body.dark .buttons .button {
 .titleCases p {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #787D80;
+  color: #DEDEDE;
   align-self: flex-start;
   margin-bottom: 2.25rem;
 }
@@ -528,7 +525,6 @@ body.dark .buttons .button {
   /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
-  font-weight: 800;
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
@@ -556,7 +552,7 @@ body.dark .buttons .button {
 .assets .title p {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #787D80;
+  color: #DEDEDE;
   text-align: start;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -586,7 +582,6 @@ body.dark .buttons .button {
   /*background: linear-gradient(270deg, #9BD9F2 15.33%, #F0A5A4 101.88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
-  font-weight: 800;
   background-size: 400% 400%;
   font-size: 1.75rem;
   padding-bottom: 0.875rem;
@@ -614,7 +609,7 @@ body.dark .buttons .button {
 .social p {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #787D80;
+  color: #DEDEDE;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .social p {
@@ -696,7 +691,6 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
   display: flex;
   flex-direction: column;
   border-radius: 18.525px;
-  justify-content: space-around;
   align-items: center;
   box-shadow: 0px 0px 48.75px rgba(0, 0, 0, 0.25);
   transition: 0.25s;
@@ -705,7 +699,13 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
   width: 325px;
   height: 422.5px;
   box-shadow: 0px 0px 48.75px rgba(0, 0, 0, 0.25);
-  padding: 1.25rem 1.25rem;
+  padding: 70px 20px;
+}
+.gcards .card .dynamic-icon {
+  height: 180px;
+}
+.gcards .card .dynamic-icon svg {
+  height: 100%;
 }
 .gcards .card:hover {
   scale: 1.05;
@@ -716,7 +716,6 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
     width: 379.275px;
     height: 493.0575px;
     box-shadow: 0px 0px 56.89125px rgba(0, 0, 0, 0.25);
-    padding: 1.5rem 1.5rem;
   }
 }
 @media (max-width: 1250px) and (orientation: landscape) {
@@ -725,6 +724,10 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
     width: 260px;
     height: 338px;
     box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.25);
+  }
+  .gcards .card .dynamic-icon {
+    height: 100px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) and (orientation: landscape) {
@@ -741,6 +744,10 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
     width: 260px;
     height: 338px;
     box-shadow: 0px 0px 39px rgba(0, 0, 0, 0.25);
+  }
+  .gcards .card .dynamic-icon {
+    height: 100px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) and (orientation: portrait) {
@@ -783,13 +790,15 @@ body.dark .title h2, body.dark .titleCases h2, body.dark .social h2, body.dark .
 }
 
 body.dark .card {
-  background: #141B22;
+  background: #02080E;
 }
 body.dark .card h3 {
+  margin-top: auto;
+  margin-bottom: 20px;
   color: #ffffff;
 }
 body.dark .card p {
-  color: #ffffff;
+  color: #787D80;
 }
 
 .groupCases {
@@ -816,6 +825,21 @@ body.dark .card p {
   gap: 44px;
   margin-bottom: 88px;
 }
+.groupCases .gCases .dynamic-icon {
+  width: 170px;
+  margin-left: 60px;
+}
+.groupCases .gCases .dynamic-icon svg {
+  width: 100%;
+}
+.groupCases .gCases .dynamic-icon-tall {
+  width: 170px;
+  margin-left: 60px;
+}
+.groupCases .gCases .dynamic-icon-tall svg {
+  width: 100%;
+  max-height: 120px;
+}
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupCases .gCases {
     gap: 52px;
@@ -830,7 +854,7 @@ body.dark .card p {
 }
 .groupCases .gCases .cCases {
   display: flex;
-  background-color: #141B22;
+  background-color: #02080E;
   width: 80vw;
   height: 220px;
   border-radius: 19.8px;
@@ -872,14 +896,12 @@ body.dark .card p {
 .groupCases .gCases .cCases h2 {
   width: 30%;
   text-align: center;
-  background: linear-gradient(90deg, #B3286B 25%, #4A2DFA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 800;
   background-size: 400% 400%;
   font-size: 1.75rem;
   -webkit-animation: change 4s ease infinite;
   animation: change 4s ease infinite;
+  color: #DEDEDE;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   .groupCases .gCases .cCases h2 {
@@ -914,10 +936,10 @@ body.dark .card p {
   }
 }
 .groupCases .gCases .cCases p {
-  color: #ffffff;
+  color: #DEDEDE;
   width: 60%;
   padding: 0 5%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
@@ -1054,7 +1076,7 @@ body.dark .card p {
 }
 
 body.dark .cardAsset {
-  background: #141B22;
+  background: #090B0F;
 }
 
 .social {
@@ -1106,7 +1128,7 @@ body.dark .cardAsset {
   flex-direction: column;
   padding: 1.25rem 1.25rem;
   transition: 0.25s;
-  background-color: #ffffff;
+  background-color: #090B0F;
 }
 .groupSocial .cardSocial:first-child {
   color: #1DA1F2;
@@ -1177,7 +1199,7 @@ body.dark .cardAsset {
 }
 
 body.dark .cardSocial {
-  background: #141B22;
+  background: #090B0F;
 }
 body.dark .cardSocial:last-child {
   color: #ffffff;
@@ -1200,11 +1222,11 @@ footer {
 footer .footer {
   width: 100%;
   display: flex;
-  padding: 1.125rem;
+  padding: 40px;
 }
 @media (min-width: 1640px) and (orientation: landscape) {
   footer .footer {
-    padding: 1.25rem;
+    padding: 40px;
   }
 }
 @media (min-width: 2000px) and (orientation: landscape) {
@@ -1420,6 +1442,7 @@ footer li {
   margin-bottom: 1rem;
   color: #000000;
   transition: 0.15s;
+  margin-bottom: 30px;
 }
 footer li:hover {
   cursor: pointer;
@@ -1428,7 +1451,7 @@ footer li:hover {
 @media (min-width: 1640px) and (orientation: landscape) {
   footer li {
     font-size: 1.125rem;
-    margin-bottom: 1.125rem;
+    margin-bottom: 30px;
   }
 }
 footer section {
@@ -1499,7 +1522,7 @@ footer .icons img {
 }
 
 body.dark footer {
-  background: linear-gradient(90deg, #320000 0%, rgba(45, 4, 78, 0.7411764706) 100%);
+  background: linear-gradient(259.8deg, rgba(45, 72, 60, 0.7) 1.25%, rgba(0, 0, 0, 0) 64.76%), radial-gradient(36.86% 787.12% at 23.68% 95.73%, #162342 0%, #14161D 100%);
 }
 body.dark footer h4 {
   color: #ffffff;
@@ -1531,7 +1554,8 @@ body {
 }
 
 body.dark {
-  background-color: #090B0F;
+  /* Rectangle 2207 */
+  background: linear-gradient(209.75deg, rgba(0, 105, 55, 0.2) -2.17%, rgba(0, 0, 0, 0) 19.68%, rgba(0, 0, 0, 0) 19.68%), linear-gradient(180deg, rgba(46, 53, 71, 0) 6.39%, rgba(0, 0, 0, 0.3102) 10.29%, rgba(1, 1, 1, 0.5412) 13.69%, rgba(0, 0, 0, 0.66) 16.12%), linear-gradient(43.55deg, #344674 50.84%, rgba(0, 0, 0, 0) 105.99%);
 }
 
 .darkMode {
@@ -1566,4 +1590,13 @@ body.dark .darkMode {
   100% {
     background-position: 0% 50%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+.italic-text {
+  font-style: italic;
+}
+
+.semibold-text {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

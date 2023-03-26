@@ -1469,6 +1469,11 @@ h6 a {
   background: linear-gradient(156.91deg, rgba(12, 147, 71, 0.5) -0.79%, rgba(240, 163, 182, 0) 21.29%), linear-gradient(179.99deg, rgba(251, 252, 255, 0) 14.27%, #ffffff 26.88%), linear-gradient(40.71deg, #fcddec 53.64%, #de4e67 142.82%);
   background-color: #fff;
 }
+@media only screen and (max-width: 767px) {
+  [data-theme=light] body {
+    background: linear-gradient(179.9deg, #01ff70 -3.93%, rgba(255, 255, 255, 0.5) 2.19%), linear-gradient(180.15deg, #de4e67 7.63%, #e3667d 11.56%, #fcddec 23.06%), linear-gradient(180deg, #fbfcff 0.22%, #ffffff 100%);
+  }
+}
 [data-theme=light] .navbar .navbar-nav.btn-nav .nav-item a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

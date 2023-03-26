@@ -589,8 +589,23 @@
 				#ffffff 26.88%
 			),
 			linear-gradient(40.71deg, #fcddec 53.64%, #de4e67 142.82%);
-
 		background-color: #fff;
+
+    @media only screen and (max-width: 767px) {
+			background: linear-gradient(
+					179.9deg,
+					#01ff70 -3.93%,
+					rgba(255, 255, 255, 0.5) 2.19%
+				),
+				linear-gradient(
+					180.15deg,
+					#de4e67 7.63%,
+					#e3667d 11.56%,
+					#fcddec 23.06%
+				),
+				linear-gradient(180deg, #fbfcff 0.22%, #ffffff 100%);
+		}
+
 	}
 
 

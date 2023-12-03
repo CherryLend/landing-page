@@ -75,7 +75,7 @@
 				transition: all 0.3s ease-out 0s;
 				padding: 10px 0;
 				position: relative;
-				font-weight: 600;
+				font-weight: 500;
 				@media only screen and (max-width: 991px) {
           color: var(--title-color);
 				}
@@ -106,14 +106,21 @@
 					font-size: 15px;
 					font-weight: 500;
 					color: var(--title-color);
-					background: linear-gradient(
-						94.26deg,
-						#121726 -35.67%,
-						rgba(23, 30, 46, 0.71) 121.76%
-					);
+				
 					padding: 6px 24px;
-					border: 1px solid #95af37;
-					border-radius: 10px;
+					border-radius: 9px;
+					border: 1.6px solid #fff;
+					background: linear-gradient(
+						92deg,
+						rgba(255, 239, 248, 0.4) -5.21%,
+						rgba(255, 152, 204, 0.14) 82.23%,
+						rgba(255, 130, 192, 0.07) 105.21%
+					);
+					box-shadow:
+						0px 1.689px 1.689px 0px rgba(0, 0, 0, 0.25) inset,
+						0px 1.689px 1.689px 0px rgba(0, 0, 0, 0.25);
+
+
 					&:hover {
 						background-color: var(--primary-color);
 						color: var(--title-color);

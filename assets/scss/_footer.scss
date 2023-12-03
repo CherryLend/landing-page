@@ -2,23 +2,14 @@
 # main-footer
 --------------------------------------------------------------*/
 .main-footer {
+
   .container {
     /** Large devices (desktops, 992px and up) **/
     @media (min-width: 992px) {
       max-width: 1500px;
     }
 	}
-	background: linear-gradient(
-			259.8deg,
-			rgba(45, 72, 60, 0.7) 1.25%,
-			rgba(0, 0, 0, 0) 64.76%
-		),
-		radial-gradient(
-				36.86% 787.12% at 23.68% 95.73%,
-				#162342 0%,
-				#14161d 100%
-			)
-			/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	background: rgba(132, 255, 194, 0.00);
 	padding: 50px 0px;
 	@media only screen and (max-width: 767px) {
 		padding: 30px 0px;

@@ -20,7 +20,7 @@ html[data-theme=light] {
 }
 
 html[data-theme=dark] {
-  --background-color: #101520;
+  --background-color: #643562;
   --primary-color: #ea432e;
   --secondary-color: #90bd5d;
   --text-color: #e7e7e7;
@@ -1151,6 +1151,9 @@ h6 a {
     max-width: 300px;
   }
 }
+.roadmap .map-light {
+  display: none;
+}
 
 /*--------------------------------------------------------------
 # use-case
@@ -1289,9 +1292,48 @@ h6 a {
   .case-single {
     padding: 20px 20px;
     border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-.case-single svg {
+.case-single .gole {
+  width: 240px;
+  height: 240px;
+  min-width: 240px;
+  border-radius: 100%;
+  background-color: #402b52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 1199px) {
+  .case-single .gole {
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .case-single .gole {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .case-single .gole {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+  }
+}
+.case-single .gole svg {
   width: 100%;
   max-width: 160px;
   height: 170px;
@@ -1299,21 +1341,26 @@ h6 a {
      object-fit: contain;
 }
 @media only screen and (max-width: 1199px) {
-  .case-single svg {
-    max-width: 140px;
-    height: 150px;
+  .case-single .gole svg {
+    max-width: 130px;
+    height: 140px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .case-single svg {
-    max-width: 100px;
-    height: 110px;
+  .case-single .gole svg {
+    max-width: 80px;
+    height: 90px;
   }
 }
 @media only screen and (max-width: 482px) {
-  .case-single svg {
-    max-width: 80px;
-    height: 90px;
+  .case-single .gole svg {
+    max-width: 70px;
+    height: 70px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .case-single .gole .arrow-cl {
+    height: 50px;
   }
 }
 .case-single .case-txt {
@@ -1323,6 +1370,11 @@ h6 a {
 @media only screen and (max-width: 767px) {
   .case-single .case-txt {
     padding-left: 25px;
+  }
+}
+@media only screen and (max-width: 482px) {
+  .case-single .case-txt {
+    padding-left: 16px;
   }
 }
 .case-single .case-txt h3 {
@@ -1626,6 +1678,12 @@ h6 a {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
+[data-theme=light] .roadmap .map-light {
+  display: block;
+}
+[data-theme=light] .roadmap .map-dark {
+  display: none;
+}
 [data-theme=light] .use-case .sec-t #paint0_linear_624_2630 stop:nth-child(1) {
   stop-color: black;
 }
@@ -1633,9 +1691,12 @@ h6 a {
   stop-opacity: 0;
 }
 [data-theme=light] .case-single {
-  background: #fff1f8;
+  background: rgba(255, 241, 248, 0.5);
   -webkit-box-shadow: 0px 35px 100px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 35px 100px 0px rgba(0, 0, 0, 0.15);
+}
+[data-theme=light] .case-single .gole {
+  background-color: #FFF1F8;
 }
 [data-theme=light] .case-single svg path {
   stroke: #000;
@@ -1647,9 +1708,9 @@ h6 a {
   background: rgba(255, 255, 255, 0.2);
 }
 [data-theme=light] .team-single {
-  background: #ffffff;
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  background: #FFF1F8;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.12);
 }
 [data-theme=light] .main-footer {
   background: rgba(132, 255, 194, 0);
